@@ -41,9 +41,10 @@ for x in range(z):
 print(strlist)
 for r in strlist:
     d = r%2
-    if d == 1:
+    d = int(d)
+    if d > 0:
         i = list(strlist[r])
-        i = strlist[r]
+        strlist[r] = i
 print(strlist)
 
 #strlistrev = sorted(strlist1, reverse = True)
