@@ -40,6 +40,7 @@ for x in range(z):
         m = 1
 print(strlist)
 for r in strlist:
+    
     d = r%2
     d = int(d)
     if d > 0:
