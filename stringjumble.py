@@ -2,6 +2,7 @@
 stringjumble.py
 Author: Sarah Dunbar
 Credit: http://stackoverflow.com/questions/743806/split-string-into-a-list-in-python, http://www.decalage.info/en/python/print_list
+http://stackoverflow.com/questions/4130027/python-count-elements-in-list, https://mail.python.org/pipermail/tutor/2004-August/031010.html
 
 Assignment:
 
@@ -28,6 +29,21 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 
 string = input("Please enter a string of text (the bigger the better):")
 strlist = string.split(" ")
+r = len(strlist)
+z = r*2
+for x in range(z):
+    if x == (z-1):
+        break
+    if x%2 == 1:
+        strlist.insert(x, " ")
+    else:
+        m = 1
+print(strlist)
+for r in strlist:
+    d = r%2
+    if d == 1:
+        i = list(strlist[r])
+        i = strlist[r]
 print(strlist)
 
 #strlistrev = sorted(strlist1, reverse = True)
