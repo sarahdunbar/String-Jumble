@@ -39,13 +39,10 @@ for x in range(z):
     else:
         m = 1
 print(strlist)
-for r in strlist:
-    
-    d = r%2
-    d = int(d)
-    if d > 0:
-        i = list(strlist[r])
-        strlist[r] = i
+for p in range(0, r+1):
+    g = strlist[p]
+    i = list(g)
+    strlist[p] = i
 print(strlist)
 
 #strlistrev = sorted(strlist1, reverse = True)
