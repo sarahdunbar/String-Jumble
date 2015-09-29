@@ -1,7 +1,7 @@
 """
 stringjumble.py
 Author: Sarah Dunbar
-Credit: http://stackoverflow.com/questions/743806/split-string-into-a-list-in-python
+Credit: http://stackoverflow.com/questions/743806/split-string-into-a-list-in-python, http://www.decalage.info/en/python/print_list
 
 Assignment:
 
@@ -27,3 +27,11 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 """
 
 string = input("Please enter a string of text (the bigger the better):")
+strlist = string.split(" ")
+print(strlist)
+
+#strlistrev = sorted(strlist1, reverse = True)
+#print ("".join(strlistrev))
+
+#strlist = string.split(" ")
+#print(strlist)
