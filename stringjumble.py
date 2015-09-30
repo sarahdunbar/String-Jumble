@@ -42,7 +42,13 @@ for p in range(0, (r*2 - 1)):
     g = strlist[p]
     i = list(g)
     strlist[p] = i
-r = sorted(strlist, reverse=True=
+print(strlist)
+two = sorted(strlist, reverse=True)
+print (two)
+for p in range(0, (r*2 - 1)):
+    g = strlist[p]
+    strlist[p] = sorted(g, reverse=True)
+
 
 #strlistrev = sorted(strlist1, reverse = True)
 #print ("".join(strlistrev))
