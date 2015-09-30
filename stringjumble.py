@@ -47,7 +47,8 @@ for p in range(0, (r*2 - 1)):
     strlist[p] = i
 for p in range(0, (r*2 - 1)):
     g = strlist[p]
-    strlist[p] = g.reverse()
+    g.reverse()
+    strlist[p] = g
 strlist.reverse()
 print(strlist)
 
