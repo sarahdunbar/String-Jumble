@@ -45,12 +45,11 @@ for p in range(0, (r*2 - 1)):
     g = strlist[p]
     i = list(g)
     strlist[p] = i
-two = strlist(reverse(array))
-print(two)
-
 for p in range(0, (r*2 - 1)):
     g = strlist[p]
-    strlist[p] = sorted(g, reverse=True)
+    strlist[p] = g.reverse()
+strlist.reverse()
+print(strlist)
 
 
 #strlistrev = sorted(strlist1, reverse = True)
