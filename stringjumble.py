@@ -38,12 +38,11 @@ for x in range(z):
         strlist.insert(x, " ")
     else:
         m = 1
-print(strlist)
-for p in range(0, r+1):
+for p in range(0, (r*2 - 1)):
     g = strlist[p]
     i = list(g)
     strlist[p] = i
-print(strlist)
+r = sorted(strlist, reverse=True=
 
 #strlistrev = sorted(strlist1, reverse = True)
 #print ("".join(strlistrev))
