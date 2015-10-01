@@ -2,7 +2,7 @@
 stringjumble.py
 Author: Sarah Dunbar
 Credit: http://stackoverflow.com/questions/743806/split-string-into-a-list-in-python, http://www.decalage.info/en/python/print_list
-http://stackoverflow.com/questions/4130027/python-count-elements-in-list, https://mail.python.org/pipermail/tutor/2004-August/031010.html
+http://stackoverflow.com/questions/4130027/python-count-elements-in-list, https://mail.python.org/pipermail/tutor/2004-August/031010.html, Anoushka Alavilli
 
 Assignment:
 
@@ -26,14 +26,10 @@ ydnah dnif yam uoy taht skcirt ro seuqinhcet wef a era erehT
 handy find may you that tricks or techniques few a are There
 erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 """
-def reverse(s):
-    s.dir *= -1
-
 string = input("Please enter a string of text (the bigger the better):")
 strlist = string.split(" ")
 r = len(strlist)
 z = r*2
-
 for x in range(z):
     if x == (z-1):
         break
@@ -41,6 +37,9 @@ for x in range(z):
         strlist.insert(x, " ")
     else:
         m = 1
+strlist3 = strlist[:]
+strlist3.reverse()
+l2 = ''.join(strlist3)
 for p in range(0, (r*2 - 1)):
     g = strlist[p]
     i = list(g)
@@ -50,7 +49,19 @@ for p in range(0, (r*2 - 1)):
     g.reverse()
     strlist[p] = g
 strlist.reverse()
-print(strlist)
+for x in range(0, (r*2 - 1)):
+    g = strlist[x]
+    g = ''.join(g)
+    strlist[x] = g
+strlist2 = strlist[:]
+strlist2.reverse()
+l3 = ''.join(strlist2)
+l1 = ''.join(strlist)
+print (l1)
+print (l2)
+print(l3)
+
+
 
 
 #strlistrev = sorted(strlist1, reverse = True)
