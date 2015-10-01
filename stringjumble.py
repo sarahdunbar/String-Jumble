@@ -60,12 +60,3 @@ l1 = ''.join(strlist)
 print (l1)
 print (l2)
 print(l3)
-
-
-
-
-#strlistrev = sorted(strlist1, reverse = True)
-#print ("".join(strlistrev))
-
-#strlist = string.split(" ")
-#print(strlist)
